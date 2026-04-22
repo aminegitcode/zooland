@@ -59,6 +59,7 @@ Selon la configuration du projet, des comptes de démonstration peuvent être ut
 - `admin` / `admin123`
 - `soigneur` / `soigneur123`
 - `boutique` / `boutique123`
+- `amine.djabri` / `zooland123`
 
 ## Compétences mobilisées
 
