@@ -36,40 +36,39 @@ Ce projet permet de gérer les animaux, les espèces, les enclos, le personnel, 
 git clone https://github.com/ton-utilisateur/zooland.git
 cd zooland
 ```
-
-2. Configurer le serveur web
+### 2. Configurer le serveur web
 
 Placer le projet dans le dossier du serveur web Apache.
 
-3. Initialiser la base de données
+### 3. Initialiser la base de données
 
-Exécuter le fichier bd.sql afin de créer la structure de la base de données et insérer les données nécessaires au fonctionnement du projet.
+Exécuter le fichier `bd.sql` afin de créer la structure de la base de données et insérer les données nécessaires au fonctionnement du projet.
 
-4. Configurer la connexion à la base de données
+### 4. Configurer la connexion à la base de données
 
-Modifier le fichier myparam.php avec les paramètres de connexion à la base de données Oracle.
+Modifier le fichier `myparam.php` avec les paramètres de connexion à la base de données Oracle.
 
-5. Lancer le projet
+### 5. Lancer le projet
 
 Démarrer Apache puis ouvrir le projet dans le navigateur.
 
-Comptes de démonstration
+## Comptes de démonstration
 
 Selon la configuration du projet, des comptes de démonstration peuvent être utilisés :
 
-admin / admin123
-soigneur / soigneur123
-boutique / boutique123
+- `admin` / `admin123`
+- `soigneur` / `soigneur123`
+- `boutique` / `boutique123`
 
+## Compétences mobilisées
 
-Compétences mobilisées:
-PHP
-SQL
-Base de données
-Authentification
-Gestion des rôles
-Développement web dynamique
+- PHP
+- SQL
+- Base de données
+- Authentification
+- Gestion des rôles
+- Développement web dynamique
 
+## Auteur
 
-Auteur
 Amine Djabri
