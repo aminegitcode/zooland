@@ -70,6 +70,17 @@ Selon la configuration du projet, des comptes de démonstration peuvent être ut
 - Gestion des rôles
 - Développement web dynamique
 
+
+  ## Captures d’écran
+
+(screenshots/dashboard.png)
+
+
+(screenshots/animaux.png)
+
+
+(screenshots/personnel.png)
+
 ## Auteur
 
 Amine Djabri
