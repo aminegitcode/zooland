@@ -33,7 +33,7 @@ Ce projet permet de gérer les animaux, les espèces, les enclos, le personnel, 
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ton-utilisateur/zooland.git
+git clone https://github.com/aminegitcode/zooland.git
 cd zooland
 ```
 ### 2. Configurer le serveur web
