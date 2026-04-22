@@ -1,0 +1,264 @@
+/* =========================
+   GRILLE BOUTIQUES (INDEX)
+========================= */
+
+.boutique-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+
+/* =========================
+   CARTE BOUTIQUE
+========================= */
+
+.b-card {
+  background: rgba(255,255,255,.88);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.b-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* Barre couleur en haut (type boutique) */
+.b-card-bar {
+  height: 4px;
+  flex-shrink: 0;
+}
+
+.bc-bar-souvenirs { background: linear-gradient(90deg,#d38a10,#fbd38d); }
+.bc-bar-snack     { background: linear-gradient(90deg,#d94f70,#feb2c0); }
+.bc-bar-photo     { background: linear-gradient(90deg,#2f7cd5,#90cdf4); }
+.bc-bar-autres    { background: linear-gradient(90deg,#148c8a,#81e6d9); }
+
+
+/* Contenu de la carte */
+.b-card-inner {
+  padding: 1.05rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .72rem;
+}
+
+
+/* Header carte */
+.b-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .65rem;
+}
+
+.b-card-title {
+  font-size: .98rem;
+  font-weight: 900;
+  color: var(--txt);
+}
+
+.b-card-sub {
+  font-size: .79rem;
+  color: var(--txt-muted);
+  margin-top: .12rem;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+
+/* =========================
+   STATS RAPIDES
+========================= */
+
+.b-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .55rem;
+}
+
+.b-stat {
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: .6rem .82rem;
+  text-align: center;
+}
+
+.b-stat-v {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--txt);
+  line-height: 1.1;
+}
+
+.b-stat-l {
+  font-size: .65rem;
+  color: var(--txt-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-top: .15rem;
+}
+
+
+/* =========================
+   CA (CHIFFRE D'AFFAIRES)
+========================= */
+
+/* Liste dans les cards */
+.b-ca-mini {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+
+.b-ca-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: .65rem .75rem;
+  border-radius: 16px;
+  background: rgba(255,248,238,.7);
+  border: 1px solid rgba(81,63,35,.08);
+}
+
+.b-ca-date {
+  font-size: .76rem;
+  font-weight: 800;
+  color: var(--txt);
+}
+
+.b-ca-note {
+  font-size: .68rem;
+  color: var(--txt-muted);
+  margin-top: .1rem;
+}
+
+.b-ca-amt {
+  text-align: right;
+  font-size: .76rem;
+  font-weight: 900;
+  color: var(--amber);
+}
+
+
+/* =========================
+   EMPLOYÉS (CHIPS)
+========================= */
+
+.b-staff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  padding-top: .62rem;
+  border-top: 1px solid var(--border);
+}
+
+.b-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .24rem .58rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.82);
+  border: 1px solid var(--border);
+  font-size: .73rem;
+  font-weight: 700;
+  color: var(--txt-muted);
+}
+
+
+/* =========================
+   FOOTER CARTE
+========================= */
+
+.b-card-footer {
+  padding: .72rem 1.05rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: .45rem;
+  background: rgba(255,248,238,.5);
+}
+
+
+/* =========================
+   PAGE DETAIL BOUTIQUE
+========================= */
+
+/* Ligne CA */
+.ca-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .9rem;
+  padding: .78rem .9rem;
+  border: 1px solid rgba(81,63,35,.08);
+  border-radius: 18px;
+  background: rgba(255,248,238,.72);
+  margin-bottom: .62rem;
+}
+
+.ca-row:last-child {
+  margin-bottom: 0;
+}
+
+.ca-date {
+  font-size: .84rem;
+  color: var(--txt);
+  font-weight: 800;
+}
+
+.ca-note {
+  font-size: .72rem;
+  color: var(--txt-muted);
+  margin-top: .14rem;
+}
+
+.ca-badge {
+  flex-shrink: 0;
+}
+
+
+/* Ligne employé */
+.emp-row {
+  display: flex;
+  align-items: center;
+  gap: .72rem;
+  padding: .62rem .85rem;
+  background: rgba(255,255,255,.85);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: .48rem;
+  transition: .18s;
+}
+
+.emp-row:hover {
+  border-color: rgba(211,138,16,.28);
+  background: #fff;
+}
+
+/* Avatar */
+.emp-av {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: .78rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+

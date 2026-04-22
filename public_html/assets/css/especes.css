@@ -1,0 +1,185 @@
+/* especes.css — utilise uniquement les variables de global.css */
+
+
+/* =========================
+   GRILLE ESPECES
+========================= */
+
+/* Container des cartes */
+.grid-especes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+
+
+/* =========================
+   CARTE ESPECE
+========================= */
+
+.espece-card {
+  background: rgba(255,255,255,.92);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .22s, box-shadow .22s;
+}
+
+/* Hover */
+.espece-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+/* Container image */
+.espece-img-wrap {
+  position: relative;
+  height: 148px;
+  overflow: hidden;
+}
+
+/* Image */
+.espece-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+  display: block;
+}
+
+/* Zoom au hover */
+.espece-card:hover .espece-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* Overlay sombre */
+.espece-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 32%,
+    rgba(8,16,26,.82)
+  );
+}
+
+/* Badge sur image */
+.espece-img-badge {
+  position: absolute;
+  top: .6rem;
+  right: .6rem;
+  z-index: 2;
+}
+
+
+/* =========================
+   CONTENU CARTE
+========================= */
+
+.espece-body {
+  padding: 1rem 1.15rem 1.1rem;
+}
+
+/* Nom */
+.espece-name {
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--txt);
+}
+
+/* Nom latin */
+.espece-latin {
+  font-style: italic;
+  font-size: .78rem;
+  color: var(--txt-muted);
+  margin-bottom: .65rem;
+  font-weight: 500;
+}
+
+
+/* =========================
+   CHIPS COHABITATION
+========================= */
+
+.cohab-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .18rem .5rem;
+  border-radius: 8px;
+  background: rgba(20,140,138,.1);
+  color: var(--teal);
+  border: 1px solid rgba(20,140,138,.18);
+  font-size: .68rem;
+  font-weight: 800;
+}
+
+
+/* =========================
+   FILTRES
+========================= */
+
+.filter-btn {
+  padding: .45rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.85);
+  border: 1px solid var(--border);
+  color: var(--txt-muted);
+  font-weight: 700;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .18s;
+}
+
+/* Hover + actif */
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+  box-shadow: 0 4px 14px rgba(47,133,90,.28);
+}
+
+
+/* =========================
+   BADGES
+========================= */
+
+.bdg {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .24rem .6rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+/* Vert */
+.bdg-g {
+  background: rgba(47,133,90,.12);
+  color: var(--green);
+  border: 1px solid rgba(47,133,90,.22);
+}
+
+/* Rouge */
+.bdg-r {
+  background: rgba(217,79,112,.13);
+  color: var(--rose);
+  border: 1px solid rgba(217,79,112,.22);
+}
+
+/* Teal */
+.bdg-t {
+  background: rgba(20,140,138,.11);
+  color: var(--teal);
+  border: 1px solid rgba(20,140,138,.20);
+}
+
+

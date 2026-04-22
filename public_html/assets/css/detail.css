@@ -1,0 +1,79 @@
+/* =========================
+   LAYOUT GLOBAL DETAIL
+========================= */
+
+/* Conteneur principal (2 colonnes) */
+.detail-shell {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 1rem;
+}
+
+/* Evite overflow */
+.detail-shell > * {
+  min-width: 0;
+}
+
+/* Carte principale */
+.detail-panel {
+  background: var(--surface); /* corrigé */
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 1.15rem;
+  box-shadow: var(--shadow);
+}
+
+
+/* =========================
+   GRID INFOS (clé / valeur)
+========================= */
+
+.kv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: .8rem;
+}
+
+/* Carte info */
+.kv-card {
+  padding: .85rem .95rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid var(--border);
+}
+
+/* Label (titre) */
+.kv-label {
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--txt-muted);
+  font-weight: 800;
+}
+
+/* Valeur */
+.kv-value {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: .25rem;
+}
+
+
+/* =========================
+   LISTE STACK (éléments)
+========================= */
+
+.stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+/* Item */
+.stack-item {
+  padding: .8rem .9rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.76);
+  border: 1px solid var(--border);
+}
+

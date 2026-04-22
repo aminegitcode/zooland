@@ -1,0 +1,210 @@
+/* soins.css */
+
+
+/* =========================
+   TABS (ONGLETS)
+========================= */
+
+/* Conteneur des onglets */
+.care-tabs {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+/* Bouton onglet */
+.care-tab {
+  padding: .68rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.85);
+  font-weight: 800;
+  font-size: .88rem;
+  color: var(--txt-muted);
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* Hover */
+.care-tab:hover {
+  background: #fff;
+  color: var(--txt);
+}
+
+/* Actif */
+.care-tab.active {
+  background: linear-gradient(135deg, #ffb347, #ff8d3a);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(255,141,58,.25);
+}
+
+
+/* =========================
+   GRILLE
+========================= */
+
+.care-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+
+/* =========================
+   CARTE SOIN
+========================= */
+
+.care-card {
+  background: rgba(255,255,255,.88);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+
+/* Hover */
+.care-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================
+   BARRE COULEUR
+========================= */
+
+.care-card-bar {
+  height: 4px;
+  flex-shrink: 0;
+}
+
+/* Types de soins */
+.cc-bar-simple {
+  background: linear-gradient(90deg, #2f855a, #68d391);
+}
+
+.cc-bar-complexe {
+  background: linear-gradient(90deg, #d94f70, #feb2c0);
+}
+
+.cc-bar-nourr {
+  background: linear-gradient(90deg, #d38a10, #fbd38d);
+}
+
+
+/* =========================
+   CONTENU
+========================= */
+
+.care-card-body {
+  padding: 1.05rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+/* Titre */
+.care-title {
+  font-size: .98rem;
+  font-weight: 900;
+  color: var(--txt);
+  line-height: 1.25;
+}
+
+/* Animal */
+.care-animal {
+  font-size: .8rem;
+  color: var(--txt-muted);
+  margin-top: .15rem;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+
+/* =========================
+   MINI LIST
+========================= */
+
+.care-rows {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mini-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .34rem 0;
+  border-bottom: 1px solid rgba(81,63,35,.06);
+}
+
+.mini-row:last-child {
+  border-bottom: none;
+}
+
+.mini-row span {
+  font-size: .79rem;
+  color: var(--txt-muted);
+  font-weight: 600;
+}
+
+.mini-row strong {
+  font-size: .82rem;
+  font-weight: 800;
+  color: var(--txt);
+  text-align: right;
+  max-width: 58%;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.care-footer {
+  padding: .78rem 1.05rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: .45rem;
+  background: rgba(255,248,238,.5);
+}
+
+
+/* =========================
+   BADGES SOIGNEUR
+========================= */
+
+.bsoin {
+  display: inline-flex;
+  align-items: center;
+  gap: .28rem;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  font-size: .71rem;
+  font-weight: 800;
+}
+
+/* Types */
+.bsoin-att {
+  background: rgba(47,133,90,.12);
+  color: var(--green);
+}
+
+.bsoin-rem {
+  background: rgba(211,138,16,.14);
+  color: var(--amber);
+}
+
+.bsoin-vet {
+  background: rgba(123,97,209,.14);
+  color: var(--violet);
+}

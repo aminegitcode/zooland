@@ -1,0 +1,77 @@
+/* =========================
+   FILTRES
+========================= */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-bottom: .75rem;
+}
+
+.filter-card {
+  flex: 1;
+  min-width: 185px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: .78rem 1rem;
+  box-shadow: 0 2px 8px rgba(58,40,17,.06);
+}
+
+.filter-label {
+  font-size: .62rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--txt-muted);
+  margin-bottom: .36rem;
+}
+
+
+/* =========================
+   TABLEAU
+========================= */
+
+.table-lite {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-lite thead th {
+  padding: .78rem 1rem;
+  background: rgba(240,235,225,.92);
+  font-size: .62rem;
+  font-weight: 900;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  color: var(--txt-muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table-lite tbody td {
+  padding: .76rem 1rem;
+  border-bottom: 1px solid rgba(81,63,35,.06);
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--txt);
+  vertical-align: middle;
+}
+
+.table-lite tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-lite tbody tr:hover {
+  background: rgba(47,133,90,.04);
+}
+
+
+/* =========================
+   LIGNE ANIMAL
+========================= */
+
+.ligne-animal {
+  transition: background .14s;
+}

@@ -1,0 +1,209 @@
+/* =========================
+   GRILLES PARTAGÉES
+========================= */
+
+/* Toutes les grilles */
+.staff-grid,
+.record-grid,
+.zone-grid,
+.care-grid,
+.repair-grid,
+.sponsor-grid,
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+
+/* =========================
+   CARTES PARTAGÉES
+========================= */
+
+/* Toutes les cartes */
+.staff-card,
+.record-card,
+.zone-card,
+.care-card,
+.repair-card,
+.sponsor-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.88),
+    rgba(255,249,239,.72)
+  );
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1.05rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet décoratif */
+.staff-card::before,
+.record-card::before,
+.zone-card::before,
+.care-card::before,
+.repair-card::before,
+.sponsor-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -30% -35% auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255,179,71,.14),
+    transparent 60%
+  );
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar-tile {
+  width: 62px;
+  height: 62px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+  background: #2f855a;
+}
+
+
+/* =========================
+   STRUCTURE CARTE
+========================= */
+
+/* Header */
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: .8rem;
+  align-items: flex-start;
+  margin-bottom: .8rem;
+}
+
+/* Titre */
+.item-title {
+  font-size: 1.08rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Sous-texte */
+.item-sub {
+  font-size: .78rem;
+  color: var(--txt-muted);
+}
+
+/* Meta infos */
+.item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: .7rem 0 0;
+}
+
+/* Footer */
+.item-footer {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-top: .95rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--border);
+}
+
+
+/* =========================
+   MINI LIST
+========================= */
+
+.mini-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: .8rem;
+}
+
+/* Ligne */
+.mini-row {
+  display: flex;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: .72rem .85rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid var(--border);
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+/* Item */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: .8rem;
+  align-items: start;
+}
+
+/* Date */
+.timeline-date {
+  border-radius: 18px;
+  background: rgba(211,138,16,.14);
+  color: var(--amber);
+  padding: .65rem .45rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* Carte timeline */
+.timeline-card {
+  padding: .95rem 1rem;
+}
+
+
+/* =========================
+   BADGE ROLE
+========================= */
+
+.pill-role {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .34rem .62rem;
+  border-radius: 999px;
+  background: rgba(47,133,90,.12);
+  color: var(--green);
+  font-size: .74rem;
+  font-weight: 800;
+}
+
+
+/* =========================
+   HERO ACTIONS
+========================= */
+
+/* Bouton ghost dans hero */
+.hero-actions .btn-ghost {
+  background: rgba(255,255,255,.16);
+}

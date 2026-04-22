@@ -1,0 +1,100 @@
+/*
+ * compte.css — Changer mot de passe
+ */
+
+
+/* Image du header */
+.hero-compte { 
+  --hero-bg: url('/assets/img/detail-hero.svg'); 
+}
+
+
+/* Conteneur du champ mot de passe */
+.pwd-field { 
+  position: relative; 
+}
+
+/* Ajoute de l’espace pour l’icône œil */
+.pwd-field .form-control { 
+  padding-right: 2.75rem; 
+}
+
+/* Bouton afficher / cacher mot de passe */
+.pwd-toggle { 
+  position: absolute; 
+  right: 0.72rem; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: none; 
+  border: none; 
+  color: var(--txt-muted); 
+  cursor: pointer; 
+  font-size: 0.95rem; 
+  padding: 0.25rem; 
+  transition: color .18s; 
+}
+
+/* Effet hover */
+.pwd-toggle:hover { 
+  color: var(--green); 
+}
+
+
+/* Barre de fond (force du mot de passe) */
+.strength-track { 
+  height: 4px; 
+  border-radius: var(--radius-pill); 
+  overflow: hidden; 
+  background: rgba(22,163,74,.10); 
+  margin-top: 0.5rem; 
+}
+
+/* Barre dynamique (remplissage) */
+.strength-bar {   
+  height: 100%; 
+  border-radius: var(--radius-pill); 
+  transition: width .3s, background .3s; 
+}
+
+/* Texte : faible / moyen / fort */
+.strength-label { 
+  font-family: 'Nunito', sans-serif; 
+  font-size: 0.73rem; 
+  font-weight: 700; 
+  margin-top: 0.28rem; 
+}
+
+/* Texte confirmation mot de passe */
+.match-label {    
+  font-family: 'Nunito', sans-serif; 
+  font-size: 0.73rem; 
+  font-weight: 700; 
+  margin-top: 0.3rem; 
+}
+
+
+/* Bloc contenant les règles de sécurité */
+.security-box {   
+  background: rgba(255,255,255,.82); 
+  border: 1px solid rgba(255,255,255,.92); 
+  border-radius: var(--radius-sm); 
+  padding: 0.85rem 1rem; 
+  margin-bottom: 1.25rem; 
+}
+
+/* Une règle (ex: 8 caractères, majuscule...) */
+.security-rule {  
+  font-family: 'Nunito', sans-serif; 
+  font-size: 0.82rem; 
+  font-weight: 600; 
+  color: var(--txt); 
+  display: flex; 
+  align-items: center; 
+  gap: 0.42rem; 
+  margin-bottom: 0.2rem; 
+}
+
+/* Icone de validation */
+.security-rule i { 
+  color: var(--green); 
+}

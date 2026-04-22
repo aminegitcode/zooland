@@ -1,0 +1,119 @@
+/* zones.css */
+
+
+/* =========================
+   GRILLE DES ZONES
+========================= */
+
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+
+/* =========================
+   CARTE ZONE
+========================= */
+
+.zone-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.88),
+    rgba(255,249,239,.74)
+  );
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.zone-footer {
+  display: flex;
+  gap: .45rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: .85rem;
+  border-top: 1px solid var(--border);
+}
+
+
+/* =========================
+   PARTIES COMMUNES (cards)
+========================= */
+
+/* Header */
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: .8rem;
+  align-items: flex-start;
+  margin-bottom: .78rem;
+}
+
+/* Titre */
+.item-title {
+  font-size: .98rem;
+  font-weight: 900;
+  color: var(--txt);
+  margin: 0;
+}
+
+/* Sous-titre */
+.item-sub {
+  font-size: .78rem;
+  color: var(--txt-muted);
+  margin-top: .12rem;
+}
+
+
+/* =========================
+   MINI LIST
+========================= */
+
+.mini-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mini-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .36rem 0;
+  border-bottom: 1px solid rgba(81,63,35,.07);
+}
+
+/* Dernier élément */
+.mini-row:last-child {
+  border-bottom: none;
+}
+
+/* Label */
+.mini-row span {
+  font-size: .79rem;
+  color: var(--txt-muted);
+  font-weight: 600;
+}
+
+/* Valeur */
+.mini-row strong {
+  font-size: .82rem;
+  font-weight: 800;
+  color: var(--txt);
+  text-align: right;
+  max-width: 60%;
+}
+
+
+/* =========================
+   SEARCH (à compléter)
+========================= */
+
+/* Barre de recherche */
